@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="calculator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <h1 class="text-center">Calculator</h1>
+    </div>
+
+    <div class="content">
+        <div class="calculator">
+            <div class="input">
+                <input id="inputField" type="text" value="0" readonly>
+                <div id="toogleHistory"></div>
+            </div>
+    
+            <div class="buttons">
+                <div class="row">
+                    <button class="button" id="clear">AC</button>
+                    <button class="button" id="sign"><sup>-</sup>/<sub>+</sub></button>
+                    <button class="button" id="backspace"><i class="fa-solid fa-delete-left"></i></button>
+                    <button class="button operation" id="%">%</button>
+                </div>
+    
+                <div class="row">
+                    <button class="button" id="7">7</button>
+                    <button class="button" id="8">8</button>
+                    <button class="button" id="9">9</button>
+                    <button class="button operation" id="/">÷</button>
+                </div>
+
+                <div class="row">
+                    <button class="button" id="4">4</button>
+                    <button class="button" id="5">5</button>
+                    <button class="button" id="6">6</button>
+                    <button class="button operation" id="*">x</button>
+                </div>
+
+                <div class="row">
+                    <button class="button" id="1">1</button>
+                    <button class="button" id="2">2</button>
+                    <button class="button" id="3">3</button>
+                    <button class="button operation" id="-">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="button" id="0">0</button>
+                    <button class="button" id=".">.</button>
+                    <button class="button" id="equalsTo">=</button>
+                    <button class="button operation" id="+">+</button>
+                </div>
+
+                <div id="history" class="hidden">
+                    <ul id="historyList"></ul>
+
+                    <div id="clearHistory">
+                        <button>Clear History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

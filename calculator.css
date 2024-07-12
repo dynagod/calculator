@@ -1,0 +1,227 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.hidden{
+    animation: right 0.2s ease-in-out reverse;
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.heading{
+    background-color: black;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: rgb(31, 24, 24);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.input{
+    position: relative;
+}
+
+#toogleHistory{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+}
+
+#inputField{
+    background-color: #a2be6b;
+    height: 60px;
+    width: 400px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    padding: 32px 12px 12px 12px;
+    text-align: right;
+    font-size: 60px;
+    font-family: 'orbitron';
+}
+
+#inputField:hover{
+    cursor: default;
+}
+
+#inputField:focus{
+    outline: none;
+}
+
+.buttons{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    background-color: rgb(68, 66, 66);
+    color: white;
+    height: 48px;
+    width: 88px;
+    margin: 4px 2px;
+    font-size: 20px;
+}
+
+.operation{
+    background-color: black;
+}
+
+#equalsTo, #backspace{
+    background-color: orangered;
+}
+
+#history{
+    position: absolute;
+    background-color: rgb(68, 66, 66);
+    border-radius: 24px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    animation: right 0.2s ease-in-out normal;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@keyframes right{
+    from{width: 0px;}
+}
+
+#history::-webkit-scrollbar {
+    display: none;
+}
+
+#historyList li{
+    list-style: none;
+    border-radius: 24px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.historyButton{
+    color: white;
+    border: none;
+    width: 100%;
+    line-height: 1.5rem;
+    padding: 1.5rem;
+    background-color: rgb(68, 66, 66);
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.historyButton:hover, .historyButton:active{
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+.cal{
+    margin-bottom: 10px;
+    line-height: 1rem;
+    font-size: 1rem;
+    color: gray;
+}
+
+#clearHistory{
+    position: sticky;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#clearHistory button{
+    color: orangered;
+    border: none;
+    width: 100%;
+    line-height: 1rem;
+    padding: 1rem;
+    background-color: rgb(1, 0, 0);
+    font-size: 1rem;
+    text-align: center;
+}
+
+#clearHistory button:hover, #clearHistory button:active{
+    background-color: rgb(11, 11, 11);
+    cursor: pointer;
+}
+
+@media (max-width: 801px){
+    .heading{
+        font-size: 5vw;
+        margin-bottom: 12.5vw;
+    }
+
+    .calculator{
+        padding: 3vw;
+        border-radius: 1vw;
+    }
+
+    #toogleHistory{
+        top: 1.25vw;
+        right: 1.875vw;
+        font-size: 2vw;
+    }
+
+    #inputField{
+        height: 7.5vw;
+        width: 50vw;
+        border-radius: 2vw;
+        margin-bottom: 3vw;
+        padding: 4vw 1.5vw 1.5vw 1.5vw;
+        font-size: 7.5vw;
+    }
+
+    .button{
+        height: 6vw;
+        width: 11vw;
+        margin: 0.5vw 0.25vw;
+        font-size: 2.5vw;
+    }
+
+    #history{
+        border-radius: 3vw;
+    }
+
+    #historyList li{
+        border-radius: 3vw;
+    }
+
+    .historyButton{
+        line-height: 3vw;
+        padding: 3vw;
+        font-size: 3vw;
+    }
+
+    .cal{
+        line-height: 2vw;
+        font-size: 2vw;
+    }
+
+    #clearHistory button{
+        line-height: 2vw;
+        padding: 2vw;
+        font-size: 2vw;
+    }
+    
+}
