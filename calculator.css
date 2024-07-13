@@ -165,3 +165,63 @@
     background-color: rgb(11, 11, 11);
     cursor: pointer;
 }
+
+@media (max-width: 501px){
+    .heading{
+        font-size: 8vw;
+        margin-bottom: 20vw;
+    }
+
+    .calculator{
+        padding: 4.8vw;
+        border-radius: 1.6vw;
+    }
+
+    #toogleHistory{
+        top: 2vw;
+        right: 3vw;
+        font-size: 3.2vw;
+    }
+
+    #inputField{
+        height: 12vw;
+        width: 80vw;
+        border-radius: 3.2vw;
+        margin-bottom: 4.8vw;
+        padding: 6.4vw 2.4vw 2.4vw 2.4vw;
+        font-size: 12vw;
+    }
+
+    .button{
+        height: 9.6vw;
+        width: 17.6vw;
+        margin: 0.8vw 0.4vw;
+        font-size: 4vw;
+    }
+
+    #history{
+        border-radius: 4.8vw;
+    }
+
+    #historyList li{
+        border-radius: 4.8vw;
+    }
+
+    .historyButton{
+        line-height: 4.8vw;
+        padding: 4.8vw;
+        font-size: 4.8vw;
+    }
+
+    .cal{
+        line-height: 3.2vw;
+        font-size: 3.2vw;
+    }
+
+    #clearHistory button{
+        line-height: 3.2vw;
+        padding: 3.2vw;
+        font-size: 3.2vw;
+    }
+    
+}
